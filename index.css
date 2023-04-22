@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    font-family: 'Noto Sans', sans-serif;
+}
+.container{
+    background-color: white;
+    margin: 100px auto;
+    width: 650px;
+    height: 550px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows:  120px 1fr 1fr 1fr;
+    border-radius: 8px;
+    box-shadow: 1px 1px 15px 4px rgb(0, 0, 0);
+}
+.titulo{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1.8rem;
+    font-weight: 800;
+    
+}
+h1{
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+.container_principal{
+    grid-row: 2/5;
+    grid-column: 1/2;
+    height: 100%;
+}
+
+.input_container{
+    height: 26%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input_peso{
+    height: 100%;
+    width: 60%;
+    font-size: 1rem;
+    text-align: center;
+    border: solid 2px black;
+    border-radius: 8px;
+    margin:7px 0 20px;
+}
+.input_altura{
+    height: 100%;
+    width: 60%;
+    font-size: 1rem;
+    text-align: center;
+    border: solid 2px black;
+    border-radius: 8px;
+    margin:7px 0 20px;
+}
+.Botones{
+    margin-top: 20px;
+    height: 27%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.btn{
+    width: 70%;
+    border: none;
+    height: 100%;
+    font-size: 0.9rem;
+    border-radius: 12px;
+   background: #00f2fe;
+    color: black;
+    font-weight: 700;
+}
+label{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.container_secundario{   
+    grid-column: 2/3;
+    grid-row: 2/4;
+}
+h5{
+    font-weight: 800;
+    font-size: 0.95rem;
+    margin-top: 5px;
+}
+.container_informacion{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container_informacion_corporal{
+    width: 40%;
+    height: 50%;
+    display: grid;
+    place-items: center;
+    border:solid 2px black;
+    border-radius: 8px;
+    margin-top: 28px;
+}
+.container_imagen{
+
+    grid-row: 3/5;
+    grid-column: 2/3;
+    width:90%;
+    height:200px;
+    margin-top: 14px;
+}
+.container_imagen{
+    width: 100%;
+    background:
+		radial-gradient(
+			circle at bottom center,
+			#CCCCCC 40px,
+			white 10px,
+			transparent 10%,
+			transparent 56%,
+			white 0
+		),
+    conic-gradient(
+			from 1.57rad at 50% 100%,
+			#006CFF 0,
+			#006EFF 62.5%,
+			#45CD36 0,
+			#45CD36 75%,
+			#FFD401 0,
+			#FFD401 87.5%,
+            #FF3D1A 0,
+			#FF3D1A 100%
+	);
+    position: relative;
+} 
+  
+  .dial {
+    width: 31%;
+    height: 10%;
+    background: black;
+    border-radius: 90% 20% 20% 90%;
+    position: absolute;
+    bottom: 0;
+    left: calc(75% - 186px);
+    z-index: 1;
+    transform-origin: 100% 15px;
+    transform: rotate(90deg);
+    transition: all 0.8s ease-out;
+  }
